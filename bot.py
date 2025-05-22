@@ -1,8 +1,8 @@
 import os
 import telebot
 
-BOT_TOKEN = os.getenv("BOT_TOKEN")
-GROUP_CHAT_ID = os.getenv("GROUP_CHAT_ID")
+BOT_TOKEN = "7905878460:AAFMs94DlUaDhRRr8XEPn-UMxFrOow72xIw"
+GROUP_CHAT_ID = -1002466933691
 
 bot = telebot.TeleBot(BOT_TOKEN)
 
