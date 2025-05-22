@@ -30,8 +30,7 @@ def accept_signature(message):
 
 @bot.message_handler(func=lambda message: "http" in message.text and "petition" in message.text)
 def forward_petition(message):
-    bot.send_message(GROUP_CHAT_ID, f"👤 Користувач @{message.from_user.username or message.from_user.first_name} додав петицію:
-{message.text}")
+    bot.send_message(GROUP_CHAT_ID, f"👤 Користувач @{message.from_user.username or message.from_user.first_name} додав петицію:{message.text}")
     bot.reply_to(message, "✅ Дякуємо! Петицію надіслано в групу.")
 
 bot.infinity_polling()
